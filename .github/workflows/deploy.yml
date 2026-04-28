@@ -19,6 +19,7 @@ jobs:
       - name: Check Required Secrets
         env:
           FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+          ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
           NODEAUTH_LICENSE: ${{ secrets.NODEAUTH_LICENSE }}
           JWT_SECRET: ${{ secrets.JWT_SECRET }}
           ENCRYPTION_KEY: ${{ secrets.ENCRYPTION_KEY }}
